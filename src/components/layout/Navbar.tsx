@@ -35,7 +35,7 @@ export default function Navbar() {
         <div 
           className={`relative flex justify-between items-center px-6 py-3 rounded-2xl transition-all duration-300 border overflow-hidden ${
             scrolled 
-              ? "border-white/20 shadow-2xl shadow-brand-orange/10 scale-[0.98]" 
+              ? "border-white/20 shadow-2xl shadow-brand-purple/10 scale-[0.98]" 
               : "border-white/10 shadow-lg"
           }`}
         >
@@ -65,8 +65,8 @@ export default function Navbar() {
                   className="object-contain"
                 />
               </motion.div>
-              <span className="text-lg font-bold tracking-tight text-white group-hover:text-brand-orange transition-colors">
-                Firefox <span className="text-brand-orange">Club</span>
+              <span className="text-lg font-bold tracking-tight text-white group-hover:text-brand-purple transition-colors">
+                Firefox <span className="text-brand-purple">Club</span>
               </span>
             </Link>
 
@@ -79,7 +79,7 @@ export default function Navbar() {
                     <Link key={link.name} href={link.path} className="relative group">
                       <span className={`text-sm font-medium transition-colors duration-200 ${
                         isActive 
-                          ? "text-brand-orange" 
+                          ? "text-brand-purple" 
                           : "text-gray-200 hover:text-white"
                       }`}>
                         {link.name}
@@ -87,7 +87,7 @@ export default function Navbar() {
                       {isActive && (
                         <motion.div 
                           layoutId="active-underline" 
-                          className="absolute left-0 -bottom-1 h-0.5 w-full rounded-full bg-brand-orange" 
+                          className="absolute left-0 -bottom-1 h-0.5 w-full rounded-full bg-brand-purple" 
                         />
                       )}
                     </Link>
@@ -103,7 +103,7 @@ export default function Navbar() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-5 py-2 rounded-xl font-semibold text-black bg-white hover:bg-brand-orange hover:text-white shadow-lg transition-all text-sm"
+                    className="px-5 py-2 rounded-xl font-semibold text-black bg-white hover:bg-brand-purple hover:text-white shadow-lg transition-all text-sm"
                   >
                     Get Started
                   </motion.button>
@@ -114,7 +114,7 @@ export default function Navbar() {
             {/* Mobile Menu Toggle */}
             <button 
               aria-label={isOpen ? "Close menu" : "Open menu"} 
-              className="md:hidden text-white hover:text-brand-orange transition-colors"
+              className="md:hidden text-white hover:text-brand-purple transition-colors"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -140,7 +140,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={`px-4 py-3 rounded-xl font-medium transition-all ${
                     pathname === link.path 
-                      ? "bg-brand-orange/10 text-brand-orange" 
+                      ? "bg-brand-purple/10 text-brand-purple" 
                       : "text-gray-300 hover:bg-white/5 hover:text-white"
                   }`}
                 >
@@ -158,7 +158,7 @@ export default function Navbar() {
                 <Link 
                   href="/join" 
                   onClick={() => setIsOpen(false)} 
-                  className="px-4 py-3 rounded-xl bg-brand-orange text-white font-semibold text-center hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20"
+                  className="px-4 py-3 rounded-xl bg-brand-purple text-white font-semibold text-center hover:bg-purple-600 transition-colors shadow-lg shadow-purple-500/20"
                 >
                   Get Started
                 </Link>

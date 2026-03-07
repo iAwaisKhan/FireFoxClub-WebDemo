@@ -9,13 +9,13 @@ import { TEAM_DATA } from "@/constants/data";
 const CATEGORY_META: Record<string, { icon: React.ReactNode; borderColor: string; badgeClass: string }> = {
     Leadership: {
         icon: <Crown size={13} />,
-        borderColor: "hover:border-brand-orange/50",
-        badgeClass: "border-brand-orange/30 text-brand-orange bg-brand-orange/5",
+        borderColor: "hover:border-brand-purple/50",
+        badgeClass: "border-brand-purple/30 text-brand-purple bg-brand-purple/5",
     },
     Technical: {
         icon: <Cpu size={13} />,
-        borderColor: "hover:border-brand-yellow/50",
-        badgeClass: "border-brand-yellow/30 text-brand-yellow bg-brand-yellow/5",
+        borderColor: "hover:border-brand-cyan/50",
+        badgeClass: "border-brand-cyan/30 text-brand-cyan bg-brand-cyan/5",
     },
     Operations: {
         icon: <Settings2 size={13} />,
@@ -30,7 +30,7 @@ export default function TeamSection() {
 
             {/* ── HERO ── */}
             <section className="pt-32 pb-20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-brand-orange/20 blur-[120px] pointer-events-none" />
+                <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-brand-purple/20 blur-[120px] pointer-events-none" />
                 <div className="absolute top-20 left-0 w-1/3 h-1/2 bg-brand-indigo/40 blur-[120px] pointer-events-none" />
                 <div className="container mx-auto px-6 relative z-10">
                     <motion.div
@@ -40,13 +40,13 @@ export default function TeamSection() {
                         className="max-w-4xl mx-auto text-center"
                     >
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 glass mb-6">
-                            <span className="w-3 h-3 rounded-full bg-brand-orange animate-pulse" />
+                            <span className="w-3 h-3 rounded-full bg-brand-purple animate-pulse" />
                             <span className="text-sm font-semibold tracking-wider uppercase text-gray-300">
                                 Our Core Team
                             </span>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                            Meet the <span className="text-brand-orange">Team</span>
+                            Meet the <span className="text-brand-purple">Team</span>
                         </h1>
                         <p className="text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
                             The passionate student leaders and open-source advocates driving
@@ -104,7 +104,7 @@ export default function TeamSection() {
                                             {/* Avatar Row */}
                                             <div className="flex items-center gap-4 mb-5">
                                                 {/* Circular Avatar */}
-                                                <div className={`relative w-16 h-16 rounded-full flex-shrink-0 ring-2 ring-white/10 group-hover:ring-brand-orange/40 transition-all duration-300 overflow-hidden bg-[#1a1a1a]`}>
+                                                <div className={`relative w-16 h-16 rounded-full flex-shrink-0 ring-2 ring-white/10 group-hover:ring-brand-purple/40 transition-all duration-300 overflow-hidden bg-[#1a1a1a]`}>
                                                     <Image
                                                         src={member.image}
                                                         alt={member.name}
@@ -116,7 +116,7 @@ export default function TeamSection() {
 
                                                 {/* Name + Role */}
                                                 <div className="min-w-0">
-                                                    <h3 className="text-base font-black text-white tracking-tight group-hover:text-brand-orange transition-colors duration-300 truncate">
+                                                    <h3 className="text-base font-black text-white tracking-tight group-hover:text-brand-purple transition-colors duration-300 truncate">
                                                         {member.name}
                                                     </h3>
                                                     <span className={`inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-md border text-[10px] font-bold tracking-widest uppercase ${meta?.badgeClass}`}>
@@ -166,11 +166,11 @@ export default function TeamSection() {
 
             {/* ── CTA ── */}
             <section className="py-28 relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-orange/5 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-purple/5 to-transparent pointer-events-none" />
                 <div className="container mx-auto px-6 relative z-10 max-w-6xl">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-14 rounded-2xl border border-white/[0.06] bg-white/[0.02]">
                         <div>
-                            <p className="text-brand-orange text-xs font-bold tracking-widest uppercase mb-3">Open Positions</p>
+                            <p className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-3">Open Positions</p>
                             <h2 className="text-4xl font-black text-white tracking-tight leading-tight mb-3">
                                 Want to join<br />this team?
                             </h2>
@@ -182,7 +182,7 @@ export default function TeamSection() {
                             <motion.button
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-brand-orange text-white font-black rounded-xl shadow-lg shadow-brand-orange/20 hover:shadow-brand-orange/40 transition-all duration-300 group whitespace-nowrap"
+                                className="inline-flex items-center gap-3 px-8 py-4 bg-brand-purple text-white font-black rounded-xl shadow-lg shadow-brand-purple/20 hover:shadow-brand-purple/40 transition-all duration-300 group whitespace-nowrap"
                             >
                                 Apply Now
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

@@ -22,9 +22,9 @@ export default function TeamGalleryPreview() {
                         className="flex flex-col group/team"
                     >
                         <div className="mb-10">
-                            <span className="text-brand-orange text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Our People</span>
+                            <span className="text-brand-purple text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Our People</span>
                             <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-none">
-                                Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-yellow">Leadership</span>
+                                Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-cyan">Leadership</span>
                             </h2>
                         </div>
                         <p className="text-gray-400 mb-10 text-xl leading-relaxed font-light">
@@ -54,7 +54,7 @@ export default function TeamGalleryPreview() {
                             
                             <div className="h-px bg-white/5 w-full my-2" />
                             
-                            <Link href="/team" className="group flex items-center gap-3 text-white hover:text-brand-orange transition-all font-bold group-hover/team:translate-x-2">
+                            <Link href="/team" className="group flex items-center gap-3 text-white hover:text-brand-purple transition-all font-bold group-hover/team:translate-x-2">
                                 Discover the Full Team <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
                             </Link>
                         </div>
@@ -69,9 +69,9 @@ export default function TeamGalleryPreview() {
                         className="flex flex-col group/gallery"
                     >
                         <div className="mb-10">
-                            <span className="text-brand-yellow text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Captures</span>
+                            <span className="text-brand-cyan text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Captures</span>
                             <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-none">
-                                Community <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-orange">Moments</span>
+                                Community <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-purple">Moments</span>
                             </h2>
                         </div>
                         
@@ -81,7 +81,7 @@ export default function TeamGalleryPreview() {
                                 whileHover={{ scale: 0.98 }}
                                 className="relative rounded-[2.5rem] overflow-hidden bg-white/5 border border-white/10 group/img"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/40 to-black group-hover/img:opacity-50 transition-all" />
+                                <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/40 to-black group-hover/img:opacity-50 transition-all" />
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-all font-black text-white tracking-widest text-xs uppercase">
                                     Launch Pad 2024
                                 </div>
@@ -90,14 +90,14 @@ export default function TeamGalleryPreview() {
                                 whileHover={{ scale: 0.98 }}
                                 className="relative rounded-[2.5rem] overflow-hidden bg-white/5 border border-white/10 group/img"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-tr from-brand-yellow/30 to-black group-hover/img:opacity-50 transition-all" />
+                                <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/30 to-black group-hover/img:opacity-50 transition-all" />
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-all font-black text-white tracking-widest text-xs uppercase">
                                     Hack-a-thon
                                 </div>
                             </motion.div>
                         </div>
 
-                        <Link href="/gallery" className="mt-8 group flex items-center gap-3 text-white hover:text-brand-yellow transition-all font-bold group-hover/gallery:-translate-x-2 justify-end">
+                        <Link href="/gallery" className="mt-8 group flex items-center gap-3 text-white hover:text-brand-cyan transition-all font-bold group-hover/gallery:-translate-x-2 justify-end">
                             Enter the Gallery <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
                         </Link>
                     </motion.div>

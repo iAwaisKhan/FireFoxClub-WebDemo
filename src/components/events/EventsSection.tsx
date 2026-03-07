@@ -7,8 +7,8 @@ import { EVENTS_DATA } from "@/constants/data";
 import { useState } from "react";
 
 const TYPE_COLORS: Record<string, string> = {
-    "Tech Event": "border-brand-orange/30 text-brand-orange bg-brand-orange/5",
-    "Workshop": "border-brand-yellow/30 text-brand-yellow bg-brand-yellow/5",
+    "Tech Event": "border-brand-purple/30 text-brand-purple bg-brand-purple/5",
+    "Workshop": "border-brand-cyan/30 text-brand-cyan bg-brand-cyan/5",
     "Meetup": "border-green-500/30 text-green-400 bg-green-500/5",
     "Talk": "border-brand-purple/30 text-brand-purple bg-brand-purple/5",
 };
@@ -24,7 +24,7 @@ export default function EventsSection() {
 
             {/* ── HERO ── */}
             <section className="pt-32 pb-20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-brand-orange/20 blur-[120px] pointer-events-none" />
+                <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-brand-purple/20 blur-[120px] pointer-events-none" />
                 <div className="absolute top-20 left-0 w-1/3 h-1/2 bg-brand-indigo/40 blur-[120px] pointer-events-none" />
                 <div className="container mx-auto px-6 relative z-10">
                     <motion.div
@@ -34,14 +34,14 @@ export default function EventsSection() {
                         className="max-w-4xl mx-auto text-center"
                     >
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 glass mb-6">
-                            <span className="w-3 h-3 rounded-full bg-brand-orange animate-pulse" />
+                            <span className="w-3 h-3 rounded-full bg-brand-purple animate-pulse" />
                             <span className="text-sm font-semibold tracking-wider uppercase text-gray-300">
                                 Events & Workshops
                             </span>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6">
                             Where Learning <br />
-                            <span className="text-brand-orange">Meets Action.</span>
+                            <span className="text-brand-purple">Meets Action.</span>
                         </h1>
                         <p className="text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
                             Hackathons, workshops, talks, and meetups — all designed to push your skills forward and grow the community at{" "}
@@ -62,7 +62,7 @@ export default function EventsSection() {
                             { value: `${EVENTS_DATA.length}+`, label: "Events Hosted" },
                         ].map((s) => (
                             <div key={s.label} className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-white/5 border border-white/10">
-                                <span className="text-2xl font-black text-brand-orange">{s.value}</span>
+                                <span className="text-2xl font-black text-brand-purple">{s.value}</span>
                                 <span className="text-gray-400 text-sm">{s.label}</span>
                             </div>
                         ))}
@@ -79,7 +79,7 @@ export default function EventsSection() {
                                 key={tab}
                                 onClick={() => setFilter(tab)}
                                 className={`px-5 py-2 rounded-full text-sm font-bold tracking-wide capitalize transition-all duration-300 ${filter === tab
-                                    ? "bg-brand-orange text-white shadow-lg shadow-brand-orange/20"
+                                    ? "bg-brand-purple text-white shadow-lg shadow-brand-purple/20"
                                     : "bg-white/5 text-gray-400 border border-white/10 hover:border-white/20 hover:text-white"
                                     }`}
                             >
@@ -100,18 +100,18 @@ export default function EventsSection() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="group relative rounded-3xl overflow-hidden border border-white/10 hover:border-brand-orange/40 transition-all duration-500 bg-[#141414]"                        >
+                            className="group relative rounded-3xl overflow-hidden border border-white/10 hover:border-brand-purple/40 transition-all duration-500 bg-[#141414]"                        >
                             {/* Clean top accent line only */}
-                            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-orange via-brand-yellow to-transparent" />
+                            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-purple via-brand-cyan to-transparent" />
 
                             <div className="relative z-10 p-8 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                                 {/* Left — date block */}
                                 <div className="flex flex-col items-start">
-                                    <div className="w-20 h-20 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex flex-col items-center justify-center mb-4">
-                                        <span className="text-brand-orange text-2xl font-black leading-none">
+                                    <div className="w-20 h-20 rounded-2xl bg-brand-purple/10 border border-brand-purple/20 flex flex-col items-center justify-center mb-4">
+                                        <span className="text-brand-purple text-2xl font-black leading-none">
                                             {upcomingEvents[0].date.split(" ")[1].replace(",", "")}
                                         </span>
-                                        <span className="text-brand-orange/70 text-xs font-bold uppercase">
+                                        <span className="text-brand-purple/70 text-xs font-bold uppercase">
                                             {upcomingEvents[0].date.split(" ")[0]}
                                         </span>
                                     </div>
@@ -126,7 +126,7 @@ export default function EventsSection() {
                                         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                                         <span className="text-green-400 text-xs font-bold uppercase tracking-widest">Registrations Open</span>
                                     </div>
-                                    <h2 className="text-3xl md:text-4xl font-black text-white mb-3 group-hover:text-brand-orange transition-colors">
+                                    <h2 className="text-3xl md:text-4xl font-black text-white mb-3 group-hover:text-brand-purple transition-colors">
                                         {upcomingEvents[0].title}
                                     </h2>
                                     <p className="text-gray-400 font-light mb-6 leading-relaxed">
@@ -150,7 +150,7 @@ export default function EventsSection() {
                                                 initial={{ width: 0 }}
                                                 whileInView={{ width: `${(upcomingEvents[0].registered / upcomingEvents[0].seats) * 100}%` }}
                                                 transition={{ duration: 1, delay: 0.3 }}
-                                                className="h-full bg-gradient-to-r from-brand-orange to-brand-yellow rounded-full"
+                                                className="h-full bg-gradient-to-r from-brand-purple to-brand-cyan rounded-full"
                                             />
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@ export default function EventsSection() {
                                         <motion.button
                                             whileHover={{ scale: 1.03 }}
                                             whileTap={{ scale: 0.97 }}
-                                            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-orange text-white font-bold rounded-xl shadow-lg shadow-brand-orange/20 hover:shadow-brand-orange/40 transition-all group/btn"
+                                            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-purple text-white font-bold rounded-xl shadow-lg shadow-brand-purple/20 hover:shadow-brand-purple/40 transition-all group/btn"
                                         >
                                             Register Now
                                             <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
@@ -201,7 +201,7 @@ export default function EventsSection() {
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.08 }}
                                 whileHover={{ y: -5 }}
-                                className="group relative rounded-3xl overflow-hidden border border-white/10 hover:border-brand-orange/40 transition-all duration-500 bg-[#141414]"                            >
+                                className="group relative rounded-3xl overflow-hidden border border-white/10 hover:border-brand-purple/40 transition-all duration-500 bg-[#141414]"                            >
                                 <div className={`h-[2px] w-full bg-gradient-to-r ${event.gradient}`} />
                                 {event.status === "past" && (
                                     <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
@@ -230,7 +230,7 @@ export default function EventsSection() {
                                         </div>
                                     </div>
 
-                                    <h3 className="text-lg font-black text-white mb-2 group-hover:text-brand-orange transition-colors">
+                                    <h3 className="text-lg font-black text-white mb-2 group-hover:text-brand-purple transition-colors">
                                         {event.title}
                                     </h3>
                                     <p className="text-gray-500 text-sm font-light leading-relaxed mb-4 line-clamp-2">
@@ -249,7 +249,7 @@ export default function EventsSection() {
                                                     initial={{ width: 0 }}
                                                     whileInView={{ width: `${(event.registered / event.seats) * 100}%` }}
                                                     transition={{ duration: 0.8, delay: idx * 0.1 }}
-                                                    className="h-full bg-gradient-to-r from-brand-orange to-brand-yellow rounded-full"
+                                                    className="h-full bg-gradient-to-r from-brand-purple to-brand-cyan rounded-full"
                                                 />
                                             </div>
                                             <p className="text-gray-700 text-[10px] mt-1">{event.registered}/{event.seats} seats</p>
@@ -265,7 +265,7 @@ export default function EventsSection() {
                                             ))}
                                         </div>
                                         {event.status === "upcoming" && event.registered < event.seats && (
-                                            <button className="flex items-center gap-1 text-brand-orange text-xs font-bold hover:gap-2 transition-all">
+                                            <button className="flex items-center gap-1 text-brand-purple text-xs font-bold hover:gap-2 transition-all">
                                                 Register <ChevronRight size={12} />
                                             </button>
                                         )}
@@ -279,11 +279,11 @@ export default function EventsSection() {
 
             {/* ── CTA ── */}
             <section className="py-24 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-orange/5 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-purple/5 to-transparent pointer-events-none" />
                 <div className="container mx-auto px-6 relative z-10 max-w-6xl">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-14 rounded-2xl border border-white/[0.06] bg-white/[0.02]">
                         <div>
-                            <p className="text-brand-orange text-xs font-bold tracking-widest uppercase mb-3">Stay Updated</p>
+                            <p className="text-brand-purple text-xs font-bold tracking-widest uppercase mb-3">Stay Updated</p>
                             <h2 className="text-4xl font-black text-white tracking-tight leading-tight mb-3">
                                 Never miss<br />an event.
                             </h2>
@@ -295,7 +295,7 @@ export default function EventsSection() {
                             <motion.button
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.97 }}
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-brand-orange text-white font-black rounded-xl shadow-lg shadow-brand-orange/20 hover:shadow-brand-orange/40 transition-all duration-300 group whitespace-nowrap"
+                                className="inline-flex items-center gap-3 px-8 py-4 bg-brand-purple text-white font-black rounded-xl shadow-lg shadow-brand-purple/20 hover:shadow-brand-purple/40 transition-all duration-300 group whitespace-nowrap"
                             >
                                 Join the Club
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

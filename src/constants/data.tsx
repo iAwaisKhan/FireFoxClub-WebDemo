@@ -25,9 +25,9 @@ export const PROJECTS_DATA = [
 ];
 
 /* export const EVENTS_DATA = [
-    { title: "Open Source Hackathon", date: "Oct 15, 2026", type: "Tech Event", image: "bg-gradient-to-br from-brand-purple to-brand-orange" },
-    { title: "Web Dev Bootcamp", date: "Oct 22, 2026", type: "Workshop", image: "bg-gradient-to-br from-brand-indigo to-brand-yellow" },
-    { title: "Code & Coffee", date: "Nov 05, 2026", type: "Meetup", image: "bg-gradient-to-br from-brand-orange to-brand-yellow" },
+    { title: "Open Source Hackathon", date: "Oct 15, 2026", type: "Tech Event", image: "bg-gradient-to-br from-brand-purple to-brand-purple" },
+    { title: "Web Dev Bootcamp", date: "Oct 22, 2026", type: "Workshop", image: "bg-gradient-to-br from-brand-indigo to-brand-cyan" },
+    { title: "Code & Coffee", date: "Nov 05, 2026", type: "Meetup", image: "bg-gradient-to-br from-brand-purple to-brand-cyan" },
 ]; */
 
 export const EVENTS_DATA = [
@@ -43,8 +43,8 @@ export const EVENTS_DATA = [
         registered: 87,
         description: "A 12-hour open-source hackathon where teams build real tools, contribute to Mozilla projects, and compete for prizes.",
         tags: ["Hackathon", "Open Source", "Teams"],
-        gradient: "from-brand-purple to-brand-orange",
-        accentColor: "brand-orange",
+        gradient: "from-brand-purple to-brand-purple",
+        accentColor: "brand-purple",
     },
     {
         id: 2,
@@ -58,8 +58,8 @@ export const EVENTS_DATA = [
         registered: 60,
         description: "A hands-on full-day workshop covering modern web development — from HTML/CSS fundamentals to deploying a Next.js app.",
         tags: ["Web Dev", "Next.js", "Beginner Friendly"],
-        gradient: "from-brand-indigo to-brand-yellow",
-        accentColor: "brand-yellow",
+        gradient: "from-brand-indigo to-brand-cyan",
+        accentColor: "brand-cyan",
     },
     {
         id: 3,
@@ -73,8 +73,8 @@ export const EVENTS_DATA = [
         registered: 18,
         description: "A casual evening meetup for developers to network, share ideas, and collaborate over coffee. Open to all skill levels.",
         tags: ["Networking", "Casual", "All Levels"],
-        gradient: "from-brand-orange to-brand-yellow",
-        accentColor: "brand-yellow",
+        gradient: "from-brand-purple to-brand-cyan",
+        accentColor: "brand-cyan",
     },
     {
         id: 4,
@@ -103,8 +103,8 @@ export const EVENTS_DATA = [
         registered: 178,
         description: "A speaker session on digital privacy, open web principles, and how Firefox champions user security and data freedom.",
         tags: ["Privacy", "Firefox", "Talk"],
-        gradient: "from-brand-orange to-brand-red",
-        accentColor: "brand-orange",
+        gradient: "from-brand-purple to-brand-red",
+        accentColor: "brand-purple",
     },
 ];
 
@@ -131,7 +131,7 @@ export const TEAM_DATA = [
                 image: "https://api.dicebear.com/9.x/notionists/svg?seed=EthanCaldwell&backgroundColor=1a1a1a",
                 bio: "Leading the club's vision and strategy, driving open-source culture at VIT Bhopal.",
                 socials: { github: "#", linkedin: "#", twitter: "#" },
-                gradient: "from-brand-orange to-brand-yellow",
+                gradient: "from-brand-purple to-brand-cyan",
             },
             {
                 name: "Sofia Marchetti",
@@ -140,7 +140,7 @@ export const TEAM_DATA = [
                 image: "https://api.dicebear.com/9.x/notionists/svg?seed=SofiaMarchetti&backgroundColor=1a1a1a",
                 bio: "Coordinating events, teams and community initiatives across campus.",
                 socials: { github: "#", linkedin: "#", twitter: "#" },
-                gradient: "from-brand-purple to-brand-orange",
+                gradient: "from-brand-purple to-brand-purple",
             },
         ],
     },
@@ -154,7 +154,7 @@ export const TEAM_DATA = [
                 image: "https://api.dicebear.com/9.x/notionists/svg?seed=LucasBennett&backgroundColor=1a1a1a",
                 bio: "Architecting projects and mentoring developers in open-source best practices.",
                 socials: { github: "#", linkedin: "#", twitter: "#" },
-                gradient: "from-brand-yellow to-brand-orange",
+                gradient: "from-brand-cyan to-brand-purple",
             },
             {
                 name: "Noah Fitzgerald",
@@ -163,7 +163,7 @@ export const TEAM_DATA = [
                 image: "https://api.dicebear.com/9.x/notionists/svg?seed=NoahFitzgerald&backgroundColor=1a1a1a",
                 bio: "Building web applications and contributing to the club's technical projects.",
                 socials: { github: "#", linkedin: "#", twitter: "#" },
-                gradient: "from-brand-orange to-brand-red",
+                gradient: "from-brand-purple to-brand-red",
             },
             {
                 name: "Aria Volkov",
@@ -186,7 +186,7 @@ export const TEAM_DATA = [
                 image: "https://api.dicebear.com/9.x/notionists/svg?seed=JamesHolloway&backgroundColor=1a1a1a",
                 bio: "Organizing hackathons, workshops, and meetups that bring the community together.",
                 socials: { github: "#", linkedin: "#", twitter: "#" },
-                gradient: "from-brand-yellow to-brand-indigo",
+                gradient: "from-brand-cyan to-brand-indigo",
             },
             {
                 name: "Chloe Dupont",
@@ -195,7 +195,7 @@ export const TEAM_DATA = [
                 image: "https://api.dicebear.com/9.x/notionists/svg?seed=ChloDupont&backgroundColor=1a1a1a",
                 bio: "Spreading the word about open-source and growing the club's reach across campus.",
                 socials: { github: "#", linkedin: "#", twitter: "#" },
-                gradient: "from-brand-orange to-brand-purple",
+                gradient: "from-brand-purple to-brand-purple",
             },
         ],
     },
@@ -203,9 +203,9 @@ export const TEAM_DATA = [
 
 
 export const TEAM_MEMBERS_PREVIEW = [
-    { name: "Ethan Caldwell",  role: "President",       initials: "EC", gradient: "from-brand-orange to-brand-yellow" },
-    { name: "Sofia Marchetti", role: "Vice President",  initials: "SM", gradient: "from-brand-purple to-brand-orange" },
-    { name: "Lucas Bennett",   role: "Tech Lead",       initials: "LB", gradient: "from-brand-yellow to-brand-orange" },
-    { name: "Noah Fitzgerald", role: "Full Stack Dev",  initials: "NF", gradient: "from-brand-orange to-brand-red"    },
-    { name: "Chloe Dupont",    role: "Marketing Lead",  initials: "CD", gradient: "from-brand-orange to-brand-purple" },
+    { name: "Ethan Caldwell",  role: "President",       initials: "EC", gradient: "from-brand-purple to-brand-cyan" },
+    { name: "Sofia Marchetti", role: "Vice President",  initials: "SM", gradient: "from-brand-purple to-brand-purple" },
+    { name: "Lucas Bennett",   role: "Tech Lead",       initials: "LB", gradient: "from-brand-cyan to-brand-purple" },
+    { name: "Noah Fitzgerald", role: "Full Stack Dev",  initials: "NF", gradient: "from-brand-purple to-brand-red"    },
+    { name: "Chloe Dupont",    role: "Marketing Lead",  initials: "CD", gradient: "from-brand-purple to-brand-purple" },
 ];
