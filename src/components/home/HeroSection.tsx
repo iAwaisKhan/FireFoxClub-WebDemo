@@ -41,11 +41,11 @@ export default function HeroSection() {
             <div
                 className={`flex items-center gap-2 px-4 py-2 rounded-full mb-8 border transition-all ${
                     isRevealed
-                        ? "bg-brand-orange/20 border-brand-orange/50"
+                        ? "bg-brand-purple/20 border-brand-purple/50"
                         : "bg-white/5 border-white/5"
                 }`}
             >
-                <span className={`text-xs font-bold tracking-widest uppercase ${isRevealed ? "text-brand-orange" : "text-gray-400"}`}>
+                <span className={`text-xs font-bold tracking-widest uppercase ${isRevealed ? "text-brand-purple" : "text-gray-400"}`}>
                     New
                 </span>
                 <span className={`text-sm ${isRevealed ? "text-gray-200" : "text-gray-500"}`}>
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 </span>
                 <span
                     className={`text-5xl sm:text-6xl md:text-7xl ${dancingScript.className} transition-colors ${
-                        isRevealed ? "text-brand-orange" : "text-gray-600"
+                        isRevealed ? "text-brand-purple" : "text-gray-600"
                     }`}
                 >
                     Innovate together
@@ -117,7 +117,7 @@ export default function HeroSection() {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-3 px-10 py-5 bg-white text-black font-black rounded-2xl shadow-xl hover:shadow-orange-500/20 hover:bg-brand-orange hover:text-white transition-all duration-300 group"
+                        className="flex items-center gap-3 px-10 py-5 bg-white text-black font-black rounded-2xl shadow-xl hover:shadow-purple-500/20 hover:bg-brand-purple hover:text-white transition-all duration-300 group"
                     >
                         Get Started
                         <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform" />

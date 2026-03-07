@@ -23,9 +23,9 @@ export const PROJECTS_DATA = [
 ];
 
 export const EVENTS_DATA = [
-    { title: "Open Source Hackathon", date: "Oct 15, 2026", type: "Tech Event", image: "bg-gradient-to-br from-brand-purple to-brand-orange" },
-    { title: "Web Dev Bootcamp", date: "Oct 22, 2026", type: "Workshop", image: "bg-gradient-to-br from-brand-indigo to-brand-yellow" },
-    { title: "Code & Coffee", date: "Nov 05, 2026", type: "Meetup", image: "bg-gradient-to-br from-brand-orange to-brand-yellow" },
+    { title: "Open Source Hackathon", date: "Oct 15, 2026", type: "Tech Event", image: "bg-gradient-to-br from-brand-purple to-brand-purple" },
+    { title: "Web Dev Bootcamp", date: "Oct 22, 2026", type: "Workshop", image: "bg-gradient-to-br from-brand-indigo to-brand-cyan" },
+    { title: "Code & Coffee", date: "Nov 05, 2026", type: "Meetup", image: "bg-gradient-to-br from-brand-purple to-brand-cyan" },
 ];
 
 export const TEAM_MEMBERS_PREVIEW = [1, 2, 3, 4, 5];
