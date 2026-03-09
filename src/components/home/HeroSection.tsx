@@ -105,25 +105,6 @@ export default function HeroSection() {
                     {renderContent(true)}
                 </motion.div>
             </motion.div>
-
-            {/* 2. Interactive CTA Button Block - Stays perfectly crisp below */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                className="relative z-30 mt-16 px-6"
-            >
-                <Link href="/join">
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-3 px-10 py-5 bg-white text-black font-black rounded-2xl shadow-xl hover:shadow-purple-500/20 hover:bg-brand-purple hover:text-white transition-all duration-300 group"
-                    >
-                        Get Started
-                        <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform" />
-                    </motion.button>
-                </Link>
-            </motion.div>
         </section>
     );
 }
