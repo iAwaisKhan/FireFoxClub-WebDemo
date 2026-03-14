@@ -56,11 +56,12 @@ const VALUES = [
 ];
 
 const TIMELINE = [
-    { year: "2021", title: "Club Founded", desc: "A small group of Firefox enthusiasts at VIT Bhopal started the Mozilla Firefox Club." },
-    { year: "2022", title: "First Hackathon", desc: "Hosted our first 24-hour hackathon with 100+ participants and 20+ projects built." },
-    { year: "2023", title: "Mozilla Recognition", desc: "Officially recognized by Mozilla Foundation as a Campus Club. Community grew to 300+ members." },
-    { year: "2024", title: "Open Source Sprint", desc: "Organized a month-long open source sprint — 20+ PRs merged into real Mozilla projects." },
-    { year: "2025", title: "500 Members", desc: "Hit 500 active members. Launched our mentorship program pairing juniors with industry devs." },
+    { year: "2021", title: "Club Founded", desc: "Mozilla Firefox Club VIT Bhopal was established in September 2021 by a group of open-source enthusiasts." },
+    { year: "2024", title: "Firefox Expedition", desc: "A flagship journey exploring the Mozilla ecosystem and open-source contributions during Advitya '24." },
+    { year: "2024", title: "IdeaForge", desc: "Forging new ideas for the open web, focusing on internet privacy and accessibility challenges in Dec 2024." },
+    { year: "2025", title: "Mozverse", desc: "Stepping into the multiverse of possibilities with Firefox during Advitya '25." },
+    { year: "2025", title: "Red Light Code Right", desc: "A high-stakes algorithmic coding competition where speed met precision in July 2025." },
+    { year: "2026", title: "Imposter Protocol", desc: "A unique technical simulation decoding protocols during Advitya '26." },
 ];
 
 function StatCard({ stat, index }: { stat: typeof STATS[0]; index: number }) {
